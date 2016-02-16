@@ -2,6 +2,14 @@ body {
     font-family:Helvetica;
     padding:0;
     margin:0;
+    width: 100%;
+}
+
+#wrapper{
+    background: red;
+    max-width:1200px;
+	width:100%;
+	margin:0 auto;
 }
 
 #header {
@@ -9,7 +17,6 @@ body {
     color:#333;
     padding:5px;
     min-height:80px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
