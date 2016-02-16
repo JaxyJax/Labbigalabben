@@ -11,6 +11,8 @@ body {
 	margin:0 auto;
 }
 
+/* --- HEADER --- */
+
 #header {
     background-color:#eee;
     color:#333;
@@ -37,6 +39,8 @@ body {
     margin:0;
 }
 
+/* --- MAIN MENU--- */
+
 #mainmenu {
     text-align:right;
     padding-right: 30px;
@@ -59,6 +63,7 @@ body {
     color:black;
     display:inline-block;
     list-style:none;
+    text-transform: uppercase;
 }
 #mainmenu li a:hover {
     text-decoration:underline;
@@ -66,6 +71,14 @@ body {
 
 }
 
+/* --- SUB MENU --- */
+
 #submenu {
     border: solid 5px black;
+}
+
+/* --- FOOTER --- */
+
+#footer {
+    text-align: center;
 }
