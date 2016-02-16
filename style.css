@@ -6,7 +6,6 @@ body {
 }
 
 #wrapper{
-    background: red;
     max-width:1200px;
 	width:100%;
 	margin:0 auto;
@@ -20,8 +19,14 @@ body {
     margin: 0 auto;
 }
 
-.logo {
+#logo {
     float:left;
+    min-height: 80px;
+}
+
+#logo img {
+    padding-top: 18px;
+    padding: 13px 30px 0 30px;
 }
 
 .logo-text {
@@ -33,9 +38,8 @@ body {
 }
 
 #mainmenu {
-    padding:0;
-    margin:0;
     text-align:right;
+    padding-right: 30px;
 }
 
 #mainmenu ul {
