@@ -119,10 +119,6 @@ html {
     border-radius: 10px;
 }
 
-.content div+div {
-    padding-top:30px;
-}
-
 .content + .content {
     margin-top: 10px;
 }
@@ -183,8 +179,17 @@ html {
 
 .post h2 {
     display: inline;
+    margin: 0;
 }
 
+.post a {
+    text-decoration: none;
+    color:#000;
+}
+
+.post a:hover {
+    color:red;
+}
 
 /* --- RIGHT --- */
 
@@ -205,6 +210,41 @@ html {
 
 #search h2 {
     margin: 0;
+}
+
+.searchinput {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.col1 {
+    width: 50%;
+    float:left;
+}
+
+.col2 {
+    width: 50%;
+    float:left;
+    padding: 0;
+    margin:0;
+}
+
+.hundras {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.color {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.age {
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+.searchbutton {
 }
 
 /* --- WORK --- */

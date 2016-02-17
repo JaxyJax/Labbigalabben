@@ -49,7 +49,7 @@
                     <div class="post">      <!--- POST 1 --->
                         <div class="info">
                             <img src="images/puppy1.jpg" width="200px">
-                            <h2>Smulan</h2>
+                            <a href="#"><h2>Smulan</h2></a>
                             <p>
                                 Smulan är en söt liten hund som tycker om att leka med barn och busa i skogen. Hennes bakgrund är okänd, men ibland kan hon sitta i timmar och tomt stirra in i en vägg.
                             </p>
@@ -58,7 +58,7 @@
                     <div class="post">      <!--- POST 2 --->
                         <div class="info">
                             <img src="images/puppy2.jpg" width="200px">
-                            <h2>Judith</h2>
+                            <a href="#"><h2>Judith</h2></a>
                             <p>
                                 Judith är en snuttig mopsbebis som har förlorat sina föräldrar i en bilolycka. Hon gråter om nätterna och söker efter en familj som kan ge henne tröst.
                             </p>
@@ -67,7 +67,7 @@
                     <div class="post">      <!--- POST 3 --->
                         <div class="info">
                             <img src="images/puppy3.jpg" width="200px">
-                            <h2>Lucas</h2>
+                            <a href="#"><h2>Lucas</h2></a>
                             <p>
                                 Lucas hittades i rännstenen, utmärglad och söndertrasad. Han är nu helt återställd och söker efter en familj som kan skydda honom från livets stora faror.
                             </p>
@@ -79,12 +79,40 @@
             <div id="right">
                 <div class="content">
                     <div id="search">
-                        <form action="inget">
-                            Ras:<br>
-                            <input type="text" name="search"><br>
-                            Färg:<br>
-                            <input type="text" name="search"><br>
-                            <input type="submit" value="Sök">
+                        <form action="inget" class="action">
+                            Område:<br>
+                            <input type="text" name="search" class="searchinput"><br>
+                            Fri text:<br>
+                            <input name="search" type="text" class="searchinput"><br>
+                            <div class="col1">
+                                <input type="checkbox" name="box" value="fur">Har päls<br>
+                                <input type="checkbox" name="box" value="fur">Har tänder<br>
+                                <input type="checkbox" name="box" value="fur">Har ögon<br>
+                            </div>
+                            <div class="col2">
+                                <input type="checkbox" name="box" value="fur">Har öron<br>
+                                <input type="checkbox" name="box" value="fur">Har ben<br>
+                                <input type="checkbox" name="box" value="fur">Har svans<br>
+                            </div>
+                            <select class="hundras">
+                                <option value="mops">Mops</option>
+                                <option value="goldenretriever">Golden Retriever</option>
+                                <option value="pomeranian">Pomeranian</option>
+                            </select><br>
+                            <select class="color">
+                                <option value="brun">Brun</option>
+                                <option value="svart">Svart</option>
+                                <option value="vit">Vit</option>
+                            </select>
+                            <select class="age">
+                                <option value="1ar">1 år</option>
+                                <option value="2ar">2 år</option>
+                                <option value="3ar">3 år</option>
+                                <option value="4ar">4 år</option>
+                                <option value="5ar">5 år</option>
+                                <option value="6-20ar">6 - 20 år</option>
+                            </select><br>
+                            <input type="submit" value="Sök" class="searchbutton">
                         </form>
                     </div>
                 </div>
