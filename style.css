@@ -100,13 +100,15 @@ html {
 #submenu li{
 
     display: inline-table;
-    width: 48%;
+    width: 47%;
     text-align: center;
+    margin-left: 7px;
 
 }
 #submenu ul li a{
     padding:0;
     margin: 0;
+
     text-decoration:none;
 
 
@@ -159,12 +161,14 @@ html {
 .content {
     padding: 30px;
     background-color:#fff;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
 }
+
 
 .content div+div {
     padding-top:10px;
 }
+
 
 .content + .content {
     margin-top: 10px;
@@ -188,18 +192,27 @@ html {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+    pointer-events: none;
 }
 
 /* --- SORT --- */
 
 #sort {
     padding: 10px 30px;
+    margin-bottom: 10px;
 }
 
 /* --- RESULTS --- */
 
 .post {
-    min-height: 180px;
+    overflow: auto;
+    padding: 30px;
+    background-color:#fff;
+    border-radius: 10px;
+}
+
+.post + .post {
+    margin-top: 10px;
 }
 
 .post .info{
@@ -207,8 +220,9 @@ html {
     float: left;
 }
 
-.post img {
+.info img {
     margin-right: 15px;
+    margin-bottom: 15px;
     display: block;
     float: left;
     
@@ -216,8 +230,17 @@ html {
 
 .post h2 {
     display: inline;
+    margin: 0;
 }
 
+.post a {
+    text-decoration: none;
+    color:#000;
+}
+
+.post a:hover {
+    color:red;
+}
 
 /* --- RIGHT --- */
 
@@ -238,6 +261,41 @@ html {
 
 #search h2 {
     margin: 0;
+}
+
+.searchinput {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.col1 {
+    width: 50%;
+    float:left;
+}
+
+.col2 {
+    width: 50%;
+    float:left;
+    padding: 0;
+    margin:0;
+}
+
+.hundras {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.color {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.age {
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+.searchbutton {
 }
 
 /* --- WORK --- */
