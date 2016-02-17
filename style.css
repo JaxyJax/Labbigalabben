@@ -145,18 +145,27 @@ html {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+    pointer-events: none;
 }
 
 /* --- SORT --- */
 
 #sort {
     padding: 10px 30px;
+    margin-bottom: 10px;
 }
 
 /* --- RESULTS --- */
 
 .post {
-    min-height: 180px;
+    overflow: auto;
+    padding: 30px;
+    background-color:#fff;
+    border-radius: 10px;
+}
+
+.post + .post {
+    margin-top: 10px;
 }
 
 .post .info{
@@ -164,8 +173,9 @@ html {
     float: left;
 }
 
-.post img {
+.info img {
     margin-right: 15px;
+    margin-bottom: 15px;
     display: block;
     float: left;
     
