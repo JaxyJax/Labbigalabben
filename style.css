@@ -9,8 +9,8 @@ html {
 
 #wrapper{
     max-width:1200px;
-	width:100%;
 	margin:0 auto;
+    padding:0 15px;
 }
 
 /* --- HEADER --- */
@@ -21,7 +21,11 @@ html {
     padding:10px;
     min-height:80px;
     margin: 0 auto;
+<<<<<<< Updated upstream
     margin-bottom: 35px;
+=======
+    border-radius: 10px;
+>>>>>>> Stashed changes
 }
 
 #logo {
@@ -121,6 +125,10 @@ html {
     padding-top:30px;
 }
 
+.content + .content {
+    margin-top: 10px;
+}
+
 /* --- GOOGLE MAP --- */
 #map-wrap {
     padding: 30px;
@@ -144,8 +152,31 @@ html {
 /* --- SORT --- */
 
 #sort {
+    padding: 10px 30px;
+}
+
+/* --- RESULTS --- */
+
+.post {
+    min-height: 180px;
+}
+
+.post .info{
+    position: relative;
+    float: left;
+}
+
+.post img {
+    margin-right: 15px;
+    display: block;
+    float: left;
     
 }
+
+.post h2 {
+    display: inline;
+}
+
 
 /* --- RIGHT --- */
 
@@ -303,4 +334,9 @@ input:focus, textarea:focus {
 #footer {
     clear: both;
     text-align: center;
+    padding-top: 10px;
+}
+
+#footer .content {
+    background: none;
 }
