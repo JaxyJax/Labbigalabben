@@ -99,7 +99,7 @@ html {
 
 #submenu li{
 
-    display: inline-table;
+    display: inline-block;
     width: 47%;
     text-align: center;
     margin-left: 7px;
@@ -166,7 +166,7 @@ html {
 
 
 .content div+div {
-    padding-top:10px;
+    padding-top:30px;
 }
 
 
