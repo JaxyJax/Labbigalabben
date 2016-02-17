@@ -4,6 +4,7 @@ html {
     margin:0;
     font-family:Helvetica;
     width: 100%;
+    background: #E3F2FD;
 }
 
 #wrapper{
@@ -15,7 +16,7 @@ html {
 /* --- HEADER --- */
 
 #header {
-    background-color:#eee;
+    background-color:#fff;
     color:#333;
     padding:5px;
     min-height:80px;
@@ -87,7 +88,8 @@ html {
 
 .content {
     padding: 30px;
-    background-color:#eee;
+    background-color:#fff;
+    border-radius: 10px;
 }
 
 .content div+div {
@@ -146,6 +148,8 @@ html {
     margin: 0 auto;
     max-width: 600px;
     padding: 30px;  
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .work-content p {
