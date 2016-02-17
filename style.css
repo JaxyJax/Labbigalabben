@@ -18,9 +18,10 @@ html {
 #header {
     background-color:#fff;
     color:#333;
-    padding:5px;
+    padding:10px;
     min-height:80px;
     margin: 0 auto;
+    margin-bottom: 35px;
 }
 
 #logo {
@@ -75,10 +76,34 @@ html {
 
 /* --- SUB MENU --- */
 
-#submenu {
-    border: solid 5px black;
+#submenu{
+    margin-bottom: 35px;
+}
+#submenu ul{
+    border: solid 5px pink;
+    list-style: none;
+    margin: 15px;
+    padding: 15px;
+    display: inline;
+    border-radius:15px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
+#submenu ul li{
+    display: inherit;
+    padding: 12px;
+}
+#submenu ul li a{
+    text-decoration:none;
+    color: #8cf;
+
+}
+
+#submenu li a:hover{
+
+    color:pink;
+}
 /* --- LEFT --- */
 
 #left {
@@ -103,6 +128,7 @@ html {
 
 #googlemap {
     position: relative;
+
     padding-bottom: 50%;
     overflow: hidden;
 }
