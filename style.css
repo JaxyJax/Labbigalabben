@@ -21,11 +21,11 @@ html {
     padding:10px;
     min-height:80px;
     margin: 0 auto;
-<<<<<<< Updated upstream
+
     margin-bottom: 35px;
-=======
+
     border-radius: 10px;
->>>>>>> Stashed changes
+
 }
 
 #logo {
@@ -81,26 +81,34 @@ html {
 /* --- SUB MENU --- */
 
 #submenu{
-    margin-bottom: 35px;
+
+    width:66.666667%;
 }
 #submenu ul{
-    border: solid 5px pink;
+
+
+    position: relative;
     list-style: none;
-    margin:0;
-    padding: 15px;
-    display: inline;
-    border-radius:15px;
+    padding: 0;
+    margin: 0;
+    border-radius:10px 10px 0 0;
     font-size: 20px;
     font-weight: bold;
+
 }
 
-#submenu ul li{
-    display: inherit;
-    padding: 12px;
+#submenu li{
+
+    display: inline-table;
+    width: 48%;
+    text-align: center;
+
 }
 #submenu ul li a{
+    padding:0;
+    margin: 0;
     text-decoration:none;
-    color: #8cf;
+
 
 }
 
@@ -108,6 +116,39 @@ html {
 
     color:pink;
 }
+
+#subone{
+    border: solid 5px pink;
+    border-radius: 13px 13px 0 0;
+    border-bottom: none;
+    padding: 10px 0;
+
+}
+#subone a{
+        color: #8cf;
+}
+#subtwo{
+    border: solid 5px pink;
+    border-radius: 13px 13px 0 0;
+    border-bottom: none;
+    padding: 10px 0;
+}
+#subtwo a{
+    color:gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --- LEFT --- */
 
 #left {
@@ -118,11 +159,11 @@ html {
 .content {
     padding: 30px;
     background-color:#fff;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 .content div+div {
-    padding-top:30px;
+    padding-top:10px;
 }
 
 .content + .content {
