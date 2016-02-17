@@ -8,7 +8,7 @@ html {
 }
 
 #wrapper{
-    max-width:1200px;
+    max-width:1000px;
 	margin:0 auto;
     padding:0 15px;
 }
@@ -21,9 +21,7 @@ html {
     padding:10px;
     min-height:80px;
     margin: 0 auto;
-
-    margin-bottom: 35px;
-
+    margin-bottom: 10px;
     border-radius: 10px;
 
 }
@@ -51,6 +49,7 @@ html {
 #mainmenu {
     text-align:right;
     padding-right: 30px;
+    padding-top: 34px;
 }
 
 #mainmenu ul {
@@ -66,60 +65,67 @@ html {
 
 #mainmenu ul li a {
     text-decoration:none;
-    line-height:80px;
     color:black;
     display:inline-block;
     list-style:none;
     text-transform: uppercase;
 }
 #mainmenu li a:hover {
-    text-decoration:underline;
+    padding-bottom: 5px;
+    border-bottom: 1px solid pink;
+    color:pink;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
     
 
 }
 
 /* --- SUB MENU --- */
 
-#submenu{
-
+#submenu {
     width:66.666667%;
+    padding: 0px;
+    margin: 0px;
 }
-#submenu ul{
-
-
-    position: relative;
-    list-style: none;
+#submenu ul {
     padding: 0;
     margin: 0;
-    border-radius:10px 10px 0 0;
-    font-size: 20px;
     font-weight: bold;
+    list-style: none;
 
 }
-
-#submenu li{
-
+#submenu ul li {
     display: inline-block;
-    width: 47%;
     text-align: center;
-    margin-left: 7px;
-
-}
-#submenu ul li a{
+    background: #FCE4EC;
+    border-radius:10px 10px 0 0;
     padding:0;
     margin: 0;
-
+    width:50%;
+    min-height: 40px;
+    line-height: 40px;
     text-decoration:none;
-
-
+    color: black;
 }
 
-#submenu li a:hover{
-
+#submenu a li:hover {
     color:pink;
+    background:white;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
-#subone{
+#submenu a li p {
+    display: inline;
+}
+
+a li#active {
+    background: white;
+}
+
+/*#subone{
     border: solid 5px pink;
     border-radius: 13px 13px 0 0;
     border-bottom: none;
@@ -137,19 +143,7 @@ html {
 }
 #subtwo a{
     color:gray;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+}*/
 
 /* --- LEFT --- */
 
@@ -165,16 +159,17 @@ html {
 }
 
 
-.content div+div {
-    padding-top:30px;
-}
-
-
 .content + .content {
     margin-top: 10px;
 }
 
 /* --- GOOGLE MAP --- */
+.content-map {
+    padding: 30px;
+    background-color:#fff;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 10px;
+}
 #map-wrap {
     padding: 30px;
 }
@@ -257,20 +252,38 @@ html {
 /* --- SEARCH --- */
 
 #search {
+    overflow: auto;
 }
 
 #search h2 {
     margin: 0;
+    margin-bottom: 10px;
 }
 
 .searchinput {
     width: 100%;
     margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    background: #fbfbfb;
+    border: none;
+}
+
+.searchinput:focus {
+    outline: none;
 }
 
 .col1 {
     width: 50%;
     float:left;
+}
+
+.col1 input {
+    font-size: 1emx;
+    line-height: 24px;
+    border: none;
+    margin: 0 5px 0 0;
+    
 }
 
 .col2 {
@@ -280,22 +293,74 @@ html {
     margin:0;
 }
 
-.hundras {
-    width: 100%;
-    margin-bottom: 10px;
+.col2 input {
+    font-size: 1em;
+    line-height: 24px;
+    border: none;
+    margin: 0 5px 0 0;
+    
 }
 
+.hundras {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fbfbfb;
+    font-size: 1em;
+    line-height: 24px;
+    border: none;
+}
+
+.hundras:focus {
+    outline: none;
+}
 .color {
     width: 50%;
     margin-bottom: 10px;
+    background: #fbfbfb;
+    font-size: 1em;
+    line-height: 24px;
+    border: none;
+}
+
+.color:focus {
+    outline: none;
 }
 
 .age {
-    width: 45%;
+    width: 50%;
     margin-bottom: 10px;
+    background: #fbfbfb;
+    font-size: 1em;
+    line-height: 24px;
+    border: none;
+}
+
+.age:focus {
+    outline: none;
 }
 
 .searchbutton {
+    width: 100%;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: none;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding: 10px 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+.searchbutton:hover {
+    color: black;
+    background: pink;
 }
 
 /* --- WORK --- */
@@ -438,4 +503,16 @@ input:focus, textarea:focus {
 
 #footer .content {
     background: none;
+}
+
+/* --- MEDIA QUERIES --- */
+
+@media (max-width: 800px) {
+    .col1 {
+    width: 100%;
+}
+
+.col2 {
+    width: 100%;
+}
 }

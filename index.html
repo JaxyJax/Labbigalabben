@@ -27,14 +27,13 @@
 
             <div id="submenu">
                 <ul>
-                    <li id="subone"><a href="index.html">Herrelösa valpar</a></li>
-                    <li id="subtwo"><a href="sold.html">Sålda valpar</a></li>
+                    <a href="index.html"><li id="active"><p>Herrelösa valpar</p></li></a><a href="sold.html"><li><p>Sålda valpar</p></li></a>
                 </ul>
             </div>
 
             <div id="left">
                 
-                <div class="content">
+                <div class="content-map">
                     <div id="googlemap">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.6024574936112!2d13.580206715642158!3d59.406344811887706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads+Universitet!5e0!3m2!1ssv!2sse!4v1455710200992" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
@@ -78,10 +77,11 @@
                 <div class="content">
                     <div id="search">
                         <form action="inget" class="action">
+                            <h2>Sök:</h2>
                             Område:<br>
-                            <input type="text" name="search" class="searchinput"><br>
+                            <input type="text" name="search" class="searchinput" placeholder="Ex. Karlstad..."><br>
                             Fri text:<br>
-                            <input name="search" type="text" class="searchinput"><br>
+                            <input name="search" type="text" class="searchinput" placeholder="Ex. Söt, Gullig..."><br>
                             <div class="col1">
                                 <input type="checkbox" name="box" value="fur">Har päls<br>
                                 <input type="checkbox" name="box" value="fur">Har tänder<br>
@@ -101,8 +101,7 @@
                                 <option value="brun">Brun</option>
                                 <option value="svart">Svart</option>
                                 <option value="vit">Vit</option>
-                            </select>
-                            <select class="age">
+                            </select><select class="age">
                                 <option value="1ar">1 år</option>
                                 <option value="2ar">2 år</option>
                                 <option value="3ar">3 år</option>
