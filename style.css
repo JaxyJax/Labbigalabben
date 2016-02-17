@@ -1,7 +1,8 @@
-body {
-    font-family:Helvetica;
+body,
+html {
     padding:0;
     margin:0;
+    font-family:Helvetica;
     width: 100%;
 }
 
@@ -77,8 +78,71 @@ body {
     border: solid 5px black;
 }
 
+/* --- LEFT --- */
+
+#left {
+    float: left;
+    width: 66.66666667%;
+}
+
+.content {
+    padding: 30px;
+    background-color:#eee;
+}
+
+.content div+div {
+    padding-top:30px;
+}
+
+/* --- GOOGLE MAP --- */
+#map-wrap {
+    padding: 30px;
+}
+
+#googlemap {
+    position: relative;
+    padding-bottom: 50%;
+    overflow: hidden;
+}
+
+#googlemap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* --- SORT --- */
+
+#sort {
+    
+}
+
+/* --- RIGHT --- */
+
+#right {
+    float: right;
+    width: 33.33333333%;
+    height: 300px;
+}
+
+#right .content {
+    margin-left: 10px;
+}
+
+/* --- SEARCH --- */
+
+#search {
+}
+
+#search h2 {
+    margin: 0;
+}
+
 /* --- FOOTER --- */
 
 #footer {
+    clear: both;
     text-align: center;
 }
