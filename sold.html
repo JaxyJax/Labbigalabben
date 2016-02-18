@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="utf-8">
         <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
         <title>PuppyLove</title>
     </head>
 
@@ -27,37 +28,95 @@
 
             <div id="submenu">
                 <ul>
-                    <li id="subtwo"><a href="index.html">Herrelösa valpar</a></li>
-                    <li id="subone"><a href="sold.html">Sålda valpar</a></li>
+                    <a href="index.html"><li><p>Herrelösa valpar</p></li></a><a href="sold.html"><li id="active"><p>Sålda valpar</p></li></a>
                 </ul>
             </div>
 
             <div id="left">
                 
-                <div class="content">
-                
+                <div class="content-map">
                     <div id="googlemap">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2030.6024574936112!2d13.580206715642158!3d59.406344811887706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465cb12dfeb2f6e3%3A0x4d3afe475254bf1e!2sKarlstads+Universitet!5e0!3m2!1ssv!2sse!4v1455710200992" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
+                </div>
+                <div id="sort" class="content">
+                    <table>
+                        <tr>
+                            <th>Sortera</th>
+                            <a href="#"><td>Namn</td></a>
+                            <a href="#"><td>Pris</td></a>
+                            <a href="#"><td>Upplagt</td></a>
+                        </tr>
+                    </table>
+                </div>
 
-                    <div id="sort">
-                        Sortering efter pris, område, dagar till salu osv.
-                    </div>
-
-                    <div id="results">
-
-                    </div>
+                <div id="results">
+                    <div class="post">      <!--- POST 1 --->
+                        <div class="info">
+                            <img src="images/puppy1.jpg" width="200px">
+                            <a href="#"><h2>Smulan</h2></a>
+                            <p>
+                                Smulan är en söt liten hund som tycker om att leka med barn och busa i skogen. Hennes bakgrund är okänd, men ibland kan hon sitta i timmar och tomt stirra in i en vägg.
+                            </p>
+                        </div>
+                    </div>                  <!--- END OF POST 1 --->
+                    <div class="post">      <!--- POST 2 --->
+                        <div class="info">
+                            <img src="images/puppy2.jpg" width="200px">
+                            <a href="#"><h2>Judith</h2></a>
+                            <p>
+                                Judith är en snuttig mopsbebis som har förlorat sina föräldrar i en bilolycka. Hon gråter om nätterna och söker efter en familj som kan ge henne tröst.
+                            </p>
+                        </div>
+                    </div>                  <!--- END OF POST 2 --->
+                    <div class="post">      <!--- POST 3 --->
+                        <div class="info">
+                            <img src="images/puppy3.jpg" width="200px">
+                            <a href="#"><h2>Lucas</h2></a>
+                            <p>
+                                Lucas hittades i rännstenen, utmärglad och söndertrasad. Han är nu helt återställd och söker efter en familj som kan skydda honom från livets stora faror.
+                            </p>
+                        </div>
+                    </div>                  <!--- END OF POST 3 --->
                 </div>
             </div>
             
             <div id="right">
                 <div class="content">
                     <div id="search">
-                        <form action="inget">
-                            Ras:<br>
-                            <input type="text" name="search"><br>
-                            Färg:<br>
-                            <input type="text" name="search"><br>
+                        <form action="inget" class="action">
+                            <h2>Sök:</h2>
+                            Område:<br>
+                            <input type="text" name="search" class="searchinput" placeholder="Ex. Karlstad..."><br>
+                            Fri text:<br>
+                            <input name="search" type="text" class="searchinput" placeholder="Ex. Söt, Gullig..."><br>
+                            <div class="col1">
+                                <input type="checkbox" name="box" value="fur">Har päls<br>
+                                <input type="checkbox" name="box" value="fur">Har tänder<br>
+                                <input type="checkbox" name="box" value="fur">Har ögon<br>
+                            </div>
+                            <div class="col2">
+                                <input type="checkbox" name="box" value="fur">Har öron<br>
+                                <input type="checkbox" name="box" value="fur">Har ben<br>
+                                <input type="checkbox" name="box" value="fur">Har svans<br>
+                            </div>
+                            <select class="hundras">
+                                <option value="mops">Mops</option>
+                                <option value="goldenretriever">Golden Retriever</option>
+                                <option value="pomeranian">Pomeranian</option>
+                            </select><br>
+                            <select class="color">
+                                <option value="brun">Brun</option>
+                                <option value="svart">Svart</option>
+                                <option value="vit">Vit</option>
+                            </select><select class="age">
+                                <option value="1ar">1 år</option>
+                                <option value="2ar">2 år</option>
+                                <option value="3ar">3 år</option>
+                                <option value="4ar">4 år</option>
+                                <option value="5ar">5 år</option>
+                                <option value="6-20ar">6 - 20 år</option>
+                            </select><br>
                             <input type="submit" value="Sök">
                         </form>
                     </div>
@@ -66,7 +125,9 @@
             </div>
             
             <div id="footer">
-                Copyright © PuppyLove
+                <div class="content">
+                    Copyright © PuppyLove
+                </div>
             </div>
             
         </div>

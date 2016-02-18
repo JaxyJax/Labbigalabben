@@ -7,6 +7,11 @@ html {
     background: #E3F2FD;
 }
 
+h1, h2, h3, h4, h5 {  
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
 #wrapper{
     max-width:1000px;
 	margin:0 auto;
@@ -49,7 +54,9 @@ html {
 #mainmenu {
     text-align:right;
     padding-right: 30px;
-    padding-top: 34px;
+    padding-top: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
 #mainmenu ul {
@@ -72,13 +79,21 @@ html {
 }
 #mainmenu li a:hover {
     padding-bottom: 5px;
-    border-bottom: 1px solid pink;
-    color:pink;
+    border-bottom: 1px solid #EC407A;
+    color:#EC407A;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-    
+}
 
+#mainmenu li:nth-child(2) a:hover {
+    color:#42A5F5;
+    border-bottom: 1px solid #42A5F5;
+}
+
+#mainmenu li:nth-child(3) a:hover {
+    color: #66BB6A;
+    border-bottom: 1px solid #66BB6A;
 }
 
 /* --- SUB MENU --- */
@@ -87,6 +102,8 @@ html {
     width:66.666667%;
     padding: 0px;
     margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 #submenu ul {
     padding: 0;
@@ -110,7 +127,7 @@ html {
 }
 
 #submenu a li:hover {
-    color:pink;
+    color:#EC407A;
     background:white;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -124,26 +141,6 @@ html {
 a li#active {
     background: white;
 }
-
-/*#subone{
-    border: solid 5px pink;
-    border-radius: 13px 13px 0 0;
-    border-bottom: none;
-    padding: 10px 0;
-
-}
-#subone a{
-        color: #8cf;
-}
-#subtwo{
-    border: solid 5px pink;
-    border-radius: 13px 13px 0 0;
-    border-bottom: none;
-    padding: 10px 0;
-}
-#subtwo a{
-    color:gray;
-}*/
 
 /* --- LEFT --- */
 
@@ -195,6 +192,24 @@ a li#active {
 #sort {
     padding: 10px 30px;
     margin-bottom: 10px;
+}
+
+#sort table {
+    width: 100%;
+    text-align: left;
+}
+#sort th {
+    width: 100%;
+}
+#sort td {
+    background: url(images/arrowmicro.png) no-repeat right 0px center;
+    width: 100%;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+#sort td+td {
+    padding-left: 10px;
 }
 
 /* --- RESULTS --- */
@@ -264,7 +279,7 @@ a li#active {
     width: 100%;
     margin-bottom: 10px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 30px;
     background: #fbfbfb;
     border: none;
 }
@@ -278,69 +293,49 @@ a li#active {
     float:left;
 }
 
-.col1 input {
-    font-size: 1emx;
-    line-height: 24px;
-    border: none;
-    margin: 0 5px 0 0;
-    
-}
-
 .col2 {
     width: 50%;
     float:left;
-    padding: 0;
-    margin:0;
 }
 
-.col2 input {
+input[type=checkbox] {
     font-size: 1em;
     line-height: 24px;
     border: none;
     margin: 0 5px 0 0;
-    
+}
+
+select {
+    background: url(images/arrowmicro.png) no-repeat right 10px center;
+    border-radius: 0;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background-color: #fbfbfb;
+    font-size: 1em;
+    line-height: 30px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+select:focus {
+    outline: none;
 }
 
 .hundras {
     margin-top: 10px;
     width: 100%;
-    margin-bottom: 10px;
-    background: #fbfbfb;
-    font-size: 1em;
-    line-height: 24px;
-    border: none;
 }
 
-.hundras:focus {
-    outline: none;
-}
 .color {
     width: 50%;
-    margin-bottom: 10px;
-    background: #fbfbfb;
-    font-size: 1em;
-    line-height: 24px;
-    border: none;
-}
-
-.color:focus {
-    outline: none;
 }
 
 .age {
     width: 50%;
-    margin-bottom: 10px;
-    background: #fbfbfb;
-    font-size: 1em;
-    line-height: 24px;
-    border: none;
 }
 
-.age:focus {
-    outline: none;
-}
-
-.searchbutton {
+input[type=submit] {
     width: 100%;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
@@ -358,9 +353,9 @@ a li#active {
     font-weight:700;
 }
 
-.searchbutton:hover {
+input[type=submit]:hover {
     color: black;
-    background: pink;
+    background: #FCE4EC;
 }
 
 /* --- WORK --- */
@@ -451,32 +446,6 @@ input:focus, textarea:focus {
 	background-color:white;
 }
 
-#button-blue{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	float:left;
-	width: 100%;
-	border: #fbfbfb solid 4px;
-	cursor:pointer;
-	background-color: #3498db;
-	color:white;
-	font-size:24px;
-	padding: 10px 0;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-    margin-top:-4px;
-    font-weight:700;
-}
-
-#button-blue:hover{
-	background-color: rgba(0,0,0,0);
-	color: #0493bd;
-}
-	
-.submit:hover {
-	color: #3498db;
-}
-	
 .ease {
 	width: 0px;
 	height: 74px;
@@ -507,12 +476,20 @@ input:focus, textarea:focus {
 
 /* --- MEDIA QUERIES --- */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .col1 {
-    width: 100%;
-}
+        width: 100%;
+    }
 
-.col2 {
-    width: 100%;
-}
+    .col2 {
+        width: 100%;
+    }
+    
+    .color {
+        width: 100%;
+    }
+
+    .age {
+        width: 100%;
+    }
 }
