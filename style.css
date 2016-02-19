@@ -542,7 +542,7 @@ textarea:focus {
     
     #mainmenu {
         padding: 5px 0 0 0;
-        margin: 0 10 0 10;
+        margin: 0 10px 0 10px;
         height: 40px;
         text-align: center;
         border-top: 1px solid #EEEEEE;
