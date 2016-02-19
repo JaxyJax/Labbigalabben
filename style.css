@@ -515,7 +515,7 @@ textarea:focus {
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
         
     #left {
         width: 100%;
@@ -531,11 +531,47 @@ textarea:focus {
         margin-bottom: 10px;
     }
     
+    #logo-wrap {
+        width: 290px;
+        margin: 0 auto;
+    }
+    
+    .logo-text {
+        float: none;
+    }
+    
+    #mainmenu {
+        padding: 5px 0 0 0;
+        margin: 0 10 0 10;
+        height: 40px;
+        text-align: center;
+        border-top: 1px solid #EEEEEE;
+    }
+    
+    #mainmenu ul li {
+        padding: 0 10px;
+        line-height: 40px;
+    }
+    
+    #mainmenu li a:hover {
+        border-bottom: none;
+    }
+    
+    #mainmenu li:nth-child(2) a:hover {
+        border-bottom: none;
+    }
+
+    #mainmenu li:nth-child(3) a:hover {
+        border-bottom: none;
+    }
+    
     #submenu {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+        width: 100%;
+    }
 }
+
+@media (max-width: 500px) {
+    #mainmenu ul li {
+        font-size: 12px;
+    }
 }
