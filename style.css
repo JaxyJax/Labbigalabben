@@ -1,38 +1,42 @@
 body,
 html {
-    padding:0;
-    margin:0;
-	font-family: Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
     width: 100%;
     background: #E3F2FD;
 }
 
-h1, h2, h3, h4, h5 {  
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
-#wrapper{
-    max-width:1000px;
-	margin:0 auto;
-    padding:0 15px;
+#wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
+
 
 /* --- HEADER --- */
 
 #header {
-    background-color:#fff;
-    color:#333;
-    padding:10px;
-    min-height:80px;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    min-height: 80px;
     margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 10px;
-
 }
 
 #logo {
-    float:left;
+    float: left;
     min-height: 80px;
 }
 
@@ -42,17 +46,18 @@ h1, h2, h3, h4, h5 {
 }
 
 .logo-text {
-    float:left;
+    float: left;
     font-family: 'Josefin Sans', sans-serif;
-    line-height:80px;
-    padding:0;
-    margin:0;
+    line-height: 80px;
+    padding: 0;
+    margin: 0;
 }
+
 
 /* --- MAIN MENU--- */
 
 #mainmenu {
-    text-align:right;
+    text-align: right;
     padding-right: 30px;
     padding-top: 32px;
     font-family: 'Open Sans', sans-serif;
@@ -60,34 +65,35 @@ h1, h2, h3, h4, h5 {
 }
 
 #mainmenu ul {
-    padding:0;
-    margin:0;
-    list-style:none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 #mainmenu ul li {
-    display:inline;
-    padding-right:10px;
+    display: inline;
+    padding-right: 10px;
 }
 
 #mainmenu ul li a {
-    text-decoration:none;
-    color:black;
-    display:inline-block;
-    list-style:none;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    list-style: none;
     text-transform: uppercase;
 }
+
 #mainmenu li a:hover {
     padding-bottom: 5px;
     border-bottom: 1px solid #EC407A;
-    color:#EC407A;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+    color: #EC407A;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 #mainmenu li:nth-child(2) a:hover {
-    color:#42A5F5;
+    color: #42A5F5;
     border-bottom: 1px solid #42A5F5;
 }
 
@@ -96,42 +102,44 @@ h1, h2, h3, h4, h5 {
     border-bottom: 1px solid #66BB6A;
 }
 
+
 /* --- SUB MENU --- */
 
 #submenu {
-    width:66.666667%;
+    width: 66.666667%;
     padding: 0px;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
+
 #submenu ul {
     padding: 0;
     margin: 0;
     font-weight: bold;
     list-style: none;
-
 }
+
 #submenu ul li {
     display: inline-block;
     text-align: center;
     background: #FCE4EC;
-    border-radius:10px 10px 0 0;
-    padding:0;
+    border-radius: 10px 10px 0 0;
+    padding: 0;
     margin: 0;
-    width:50%;
+    width: 50%;
     min-height: 40px;
     line-height: 40px;
-    text-decoration:none;
+    text-decoration: none;
     color: black;
 }
 
 #submenu a li:hover {
-    color:#EC407A;
-    background:white;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
+    color: #EC407A;
+    background: white;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 #submenu a li p {
@@ -142,6 +150,7 @@ a li#active {
     background: white;
 }
 
+
 /* --- LEFT --- */
 
 #left {
@@ -151,29 +160,30 @@ a li#active {
 
 .content {
     padding: 30px;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 10px;
 }
-
 
 .content + .content {
     margin-top: 10px;
 }
 
+
 /* --- GOOGLE MAP --- */
+
 .content-map {
     padding: 30px;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 10px;
 }
+
 #map-wrap {
     padding: 30px;
 }
 
 #googlemap {
     position: relative;
-
     padding-bottom: 50%;
     overflow: hidden;
 }
@@ -187,6 +197,7 @@ a li#active {
     pointer-events: none;
 }
 
+
 /* --- SORT --- */
 
 #sort {
@@ -198,9 +209,11 @@ a li#active {
     width: 100%;
     text-align: left;
 }
+
 #sort th {
     width: 100%;
 }
+
 #sort td {
     background: url(images/arrowmicro.png) no-repeat right 0px center;
     width: 100%;
@@ -212,12 +225,13 @@ a li#active {
     padding-left: 10px;
 }
 
+
 /* --- RESULTS --- */
 
 .post {
     overflow: auto;
     padding: 30px;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -225,7 +239,7 @@ a li#active {
     margin-top: 10px;
 }
 
-.post .info{
+.post .info {
     position: relative;
     float: left;
 }
@@ -235,7 +249,6 @@ a li#active {
     margin-bottom: 15px;
     display: block;
     float: left;
-    
 }
 
 .post h2 {
@@ -245,12 +258,13 @@ a li#active {
 
 .post a {
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
 
 .post a:hover {
-    color:red;
+    color: red;
 }
+
 
 /* --- RIGHT --- */
 
@@ -263,6 +277,7 @@ a li#active {
 #right .content {
     margin-left: 10px;
 }
+
 
 /* --- SEARCH --- */
 
@@ -290,12 +305,12 @@ a li#active {
 
 .col1 {
     width: 50%;
-    float:left;
+    float: left;
 }
 
 .col2 {
     width: 50%;
-    float:left;
+    float: left;
 }
 
 input[type=checkbox] {
@@ -308,8 +323,8 @@ input[type=checkbox] {
 select {
     background: url(images/arrowmicro.png) no-repeat right 10px center;
     border-radius: 0;
-    -webkit-appearance:none;
-    -moz-appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     background-color: #fbfbfb;
     font-size: 1em;
     line-height: 30px;
@@ -338,19 +353,19 @@ select:focus {
 input[type=submit] {
     width: 100%;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	float:left;
-	width: 100%;
-	border: none;
-	cursor:pointer;
-	background-color: #3498db;
-	color:white;
-	font-size:24px;
-	padding: 10px 0;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-    margin-top:-4px;
-    font-weight:700;
+    float: left;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    padding: 10px 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
 }
 
 input[type=submit]:hover {
@@ -358,12 +373,13 @@ input[type=submit]:hover {
     background: #FCE4EC;
 }
 
+
 /* --- WORK --- */
 
 .work-content {
     margin: 0 auto;
     max-width: 600px;
-    padding: 30px;  
+    padding: 30px;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -376,10 +392,13 @@ input[type=submit]:hover {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 .work-content img {
     display: block;
     margin: 0 auto;
 }
+
+
 /* --- MAIL FORMULÄR --- */
 
 #form-div {
@@ -388,79 +407,84 @@ input[type=submit]:hover {
 }
 
 .feedback-input {
-	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 18px;
-	border-radius: 0;
-	line-height: 22px;
-	background-color: #fbfbfb;
-	padding: 10px 5px 10px 45px;
-	width:100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-    border: 2px solid rgba(0,0,0,0);
+    color: #3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 10px 5px 10px 45px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0);
 }
 
-.feedback-input:focus{
-	background: #fff;
-	box-shadow: 0;
-	border: 2px solid #3498db;
-	color: #3498db;
-	outline: none;
+.feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 2px solid #3498db;
+    color: #3498db;
+    outline: none;
     padding: 10px 5px 10px 45px;
 }
 
+
 /* --- Icons --- */
-#name{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 20px 20px;
-	background-position: 10px 10px;
-	background-repeat: no-repeat;
+
+#name {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 20px 20px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
 }
 
-#email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 20px 20px;
-	background-position: 10px 10px;
-	background-repeat: no-repeat;
+#email {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 20px 20px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
 }
 
-#comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 20px 20px;
-	background-position: 10px 10px;
-	background-repeat: no-repeat;
+#comment {
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 20px 20px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
 }
 
 textarea {
     width: 100%;
     height: 150px;
     line-height: 150%;
-    resize:vertical;
+    resize: vertical;
 }
 
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	background-color:white;
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    background-color: white;
 }
 
 .ease {
-	width: 0px;
-	height: 74px;
-	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
 }
 
-.submit:hover .ease{
-  width:100%;
-  background-color:white;
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
 }
+
 
 /* --- FOOTER --- */
 
@@ -474,21 +498,19 @@ input:focus, textarea:focus {
     background: none;
 }
 
+
 /* --- MEDIA QUERIES --- */
 
 @media (max-width: 850px) {
     .col1 {
         width: 100%;
     }
-
     .col2 {
         width: 100%;
     }
-    
     .color {
         width: 100%;
     }
-
     .age {
         width: 100%;
     }
