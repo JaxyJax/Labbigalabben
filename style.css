@@ -271,7 +271,6 @@ a li#active {
 #right {
     float: right;
     width: 33.33333333%;
-    height: 300px;
 }
 
 #right .content {
@@ -364,7 +363,6 @@ input[type=submit] {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    margin-top: -4px;
     font-weight: 700;
 }
 
@@ -514,4 +512,30 @@ textarea:focus {
     .age {
         width: 100%;
     }
+    
+}
+
+@media (max-width: 600px) {
+        
+    #left {
+        width: 100%;
+    }
+    
+    #right {
+        float: left;
+        width: 100%;
+    }
+    
+    #right .content {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    
+    #submenu {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
 }
