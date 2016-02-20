@@ -13,10 +13,12 @@
         
         <div id="wrapper">
             <div id="header">
-                <div id="logo">
-                    <img src="images/puppylovesmallpink.png" alt="Hjärtetassen" height="50px">
+               <div id="logo-wrap">
+                    <div id="logo">
+                        <img src="images/puppylovesmallpink.png" alt="Hjärtetassen" height="50px">
+                    </div>
+                    <h1 class="logo-text">PuppyLove</h1>
                 </div>
-                <h1 class="logo-text">PuppyLove</h1>
                 <div id="mainmenu">
                     <ul>
                         <li><a href="index.html">Hem</a></li>
@@ -25,10 +27,53 @@
                     </ul>
                 </div>
             </div>
+            
+            <div id="right">
+                <div class="content">
+                    <div id="search">
+                        <form action="inget" class="action">
+                            <h2>Sök:</h2>
+                            Område:<br>
+                            <input type="text" name="search" class="searchinput" placeholder="Ex. Karlstad..."><br>
+                            Fri text:<br>
+                            <input name="search" type="text" class="searchinput" placeholder="Ex. Söt, Gullig..."><br>
+                            <div class="col1">
+                                <input type="checkbox" name="box" value="fur">Har päls<br>
+                                <input type="checkbox" name="box" value="fur">Har tänder<br>
+                                <input type="checkbox" name="box" value="fur">Har ögon<br>
+                            </div>
+                            <div class="col2">
+                                <input type="checkbox" name="box" value="fur">Har öron<br>
+                                <input type="checkbox" name="box" value="fur">Har ben<br>
+                                <input type="checkbox" name="box" value="fur">Har svans<br>
+                            </div>
+                            <select class="hundras">
+                                <option value="mops">Mops</option>
+                                <option value="goldenretriever">Golden Retriever</option>
+                                <option value="pomeranian">Pomeranian</option>
+                            </select><br>
+                            <select class="color">
+                                <option value="brun">Brun</option>
+                                <option value="svart">Svart</option>
+                                <option value="vit">Vit</option>
+                            </select><select class="age">
+                                <option value="1ar">1 år</option>
+                                <option value="2ar">2 år</option>
+                                <option value="3ar">3 år</option>
+                                <option value="4ar">4 år</option>
+                                <option value="5ar">5 år</option>
+                                <option value="6-20ar">6 - 20 år</option>
+                            </select><br>
+                            <input type="submit" value="Sök">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
 
             <div id="submenu">
                 <ul>
-                    <a href="index.html"><li><p>Herrelösa valpar</p></li></a><a href="sold.html"><li id="active"><p>Sålda valpar</p></li></a>
+                    <a href="index.html"><li id="active"><p>Herrelösa valpar</p></li></a><a href="sold.html"><li><p>Sålda valpar</p></li></a>
                 </ul>
             </div>
 
@@ -79,49 +124,6 @@
                         </div>
                     </div>                  <!--- END OF POST 3 --->
                 </div>
-            </div>
-            
-            <div id="right">
-                <div class="content">
-                    <div id="search">
-                        <form action="inget" class="action">
-                            <h2>Sök:</h2>
-                            Område:<br>
-                            <input type="text" name="search" class="searchinput" placeholder="Ex. Karlstad..."><br>
-                            Fri text:<br>
-                            <input name="search" type="text" class="searchinput" placeholder="Ex. Söt, Gullig..."><br>
-                            <div class="col1">
-                                <input type="checkbox" name="box" value="fur">Har päls<br>
-                                <input type="checkbox" name="box" value="fur">Har tänder<br>
-                                <input type="checkbox" name="box" value="fur">Har ögon<br>
-                            </div>
-                            <div class="col2">
-                                <input type="checkbox" name="box" value="fur">Har öron<br>
-                                <input type="checkbox" name="box" value="fur">Har ben<br>
-                                <input type="checkbox" name="box" value="fur">Har svans<br>
-                            </div>
-                            <select class="hundras">
-                                <option value="mops">Mops</option>
-                                <option value="goldenretriever">Golden Retriever</option>
-                                <option value="pomeranian">Pomeranian</option>
-                            </select><br>
-                            <select class="color">
-                                <option value="brun">Brun</option>
-                                <option value="svart">Svart</option>
-                                <option value="vit">Vit</option>
-                            </select><select class="age">
-                                <option value="1ar">1 år</option>
-                                <option value="2ar">2 år</option>
-                                <option value="3ar">3 år</option>
-                                <option value="4ar">4 år</option>
-                                <option value="5ar">5 år</option>
-                                <option value="6-20ar">6 - 20 år</option>
-                            </select><br>
-                            <input type="submit" value="Sök">
-                        </form>
-                    </div>
-                </div>
-
             </div>
             
             <div id="footer">

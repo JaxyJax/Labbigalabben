@@ -4,7 +4,8 @@ html {
     margin: 0;
     font-family: Helvetica, Arial, sans-serif;
     width: 100%;
-    background: #E3F2FD;
+    background-color: #E3F2FD;
+    background: url('images/dogtile4.png')
 }
 
 h1,
@@ -262,7 +263,7 @@ a li#active {
 }
 
 .post a:hover {
-    color: red;
+    color: #EC407A;
 }
 
 
@@ -281,7 +282,6 @@ a li#active {
 /* --- SEARCH --- */
 
 #search {
-    overflow: auto;
 }
 
 #search h2 {
@@ -352,7 +352,6 @@ select:focus {
 input[type=submit] {
     width: 100%;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    float: left;
     width: 100%;
     border: none;
     cursor: pointer;
@@ -402,6 +401,7 @@ input[type=submit]:hover {
 #form-div {
     max-width: 600px;
     margin: 0 auto;
+    padding: 0;
 }
 
 .feedback-input {
@@ -464,22 +464,6 @@ input:hover,
 textarea:hover,
 input:focus,
 textarea:focus {
-    background-color: white;
-}
-
-.ease {
-    width: 0px;
-    height: 74px;
-    background-color: #fbfbfb;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -o-transition: .3s ease;
-    -ms-transition: .3s ease;
-    transition: .3s ease;
-}
-
-.submit:hover .ease {
-    width: 100%;
     background-color: white;
 }
 
