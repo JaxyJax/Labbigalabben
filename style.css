@@ -489,7 +489,7 @@ textarea:focus {
     }
     .col2 {
         width: 100%;
-    }
+    } 
     .color {
         width: 100%;
     }
@@ -500,7 +500,10 @@ textarea:focus {
 }
 
 @media (max-width: 700px) {
-        
+    #header{
+        padding: 2px;
+    }    
+
     #left {
         width: 100%;
     }
@@ -513,6 +516,13 @@ textarea:focus {
     #right .content {
         margin-left: 0px;
         margin-bottom: 10px;
+    }
+
+    .col1 {
+        width: 50%;
+    }
+    .col2 {
+        width: 50%;
     }
     
     #logo-wrap {
@@ -527,7 +537,7 @@ textarea:focus {
     #mainmenu {
         padding: 5px 0 0 0;
         margin: 0 10px 0 10px;
-        height: 40px;
+        min-height: 40px;
         text-align: center;
         border-top: 1px solid #EEEEEE;
     }
@@ -539,6 +549,7 @@ textarea:focus {
     
     #mainmenu li a:hover {
         border-bottom: none;
+        padding:0;
     }
     
     #mainmenu li:nth-child(2) a:hover {
@@ -557,5 +568,23 @@ textarea:focus {
 @media (max-width: 500px) {
     #mainmenu ul li {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .col1 {
+        width: 100%;
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    #mainmenu ul li {
+        padding: 0 4px;
+    }
+
+    #sort {
+    padding: 10px;
     }
 }
