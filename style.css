@@ -121,7 +121,7 @@ h5 {
     list-style: none;
 }
 
-#submenu ul li {
+#submenu li {
     display: inline-block;
     text-align: center;
     background: #FCE4EC;
@@ -131,11 +131,9 @@ h5 {
     width: 50%;
     min-height: 40px;
     line-height: 40px;
-    text-decoration: none;
-    color: black;
 }
 
-#submenu a li:hover {
+#submenu li:hover {
     color: #EC407A;
     background: white;
     -webkit-transition: all 0.3s;
@@ -143,11 +141,13 @@ h5 {
     transition: all 0.3s;
 }
 
-#submenu a li p {
+#submenu p, a {
     display: inline;
+    text-decoration: none;
+    color: black;
 }
 
-a li#active {
+li#active {
     background: white;
 }
 
@@ -196,6 +196,7 @@ a li#active {
     width: 100% !important;
     height: 100% !important;
     pointer-events: none;
+    border: none;
 }
 
 
@@ -226,6 +227,10 @@ a li#active {
     padding-left: 10px;
 }
 
+#sort a{
+    text-decoration: none;
+    color:black;
+}
 
 /* --- RESULTS --- */
 
