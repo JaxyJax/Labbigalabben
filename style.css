@@ -5,7 +5,8 @@ html {
     font-family: Helvetica, Arial, sans-serif;
     width: 100%;
     background-color: #E3F2FD;
-    background: url('images/dogtile4.png')
+    background: url('images/dogtile4.png');
+    background-attachment: fixed;
 }
 
 h1,
