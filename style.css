@@ -483,7 +483,7 @@ textarea:focus {
 
 /* --- MEDIA QUERIES --- */
 
-@media (max-width: 850px) {
+@media all and (max-width: 850px) {
     .col1 {
         width: 100%;
     }
@@ -499,7 +499,7 @@ textarea:focus {
     
 }
 
-@media (max-width: 700px) {
+@media all and (max-width: 700px) {
     #header{
         padding: 2px;
     }    
@@ -565,13 +565,13 @@ textarea:focus {
     }
 }
 
-@media (max-width: 500px) {
+@media all and (max-width: 500px) {
     #mainmenu ul li {
         font-size: 12px;
     }
 }
 
-@media (max-width: 360px) {
+@media all and (max-width: 360px) {
     .col1 {
         width: 100%;
     }
