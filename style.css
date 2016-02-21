@@ -177,11 +177,6 @@ li#active {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.content img {
-    width: 100%;
 }
 
 .content + .content {
@@ -196,10 +191,6 @@ li#active {
     background-color: #fff;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 10px;
-}
-
-.content-map img {
-    width: 100%;
 }
 
 #map-wrap {
@@ -406,11 +397,13 @@ input[type=submit]:hover {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
+    text-align: center;
 }
 
 .about-content p {
     text-align: justify;
 }
+
 .about-content a {
     text-decoration: none;
     color: #EC407A;
@@ -421,15 +414,16 @@ input[type=submit]:hover {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.about-content img {
+#max {
     width: 80%;
-    display: block;
-    margin: 0 auto;
     border-radius: 10px;
 }
 
-#brothers {
-    width:50%;
+.brothers{
+    width:20%;
+    border-radius: 30px;
+
+
 }
 
 
@@ -602,6 +596,7 @@ textarea:focus {
     }
     
     #mainmenu ul li {
+        padding: 0 10px;
         line-height: 40px;
     }
     
@@ -625,7 +620,6 @@ textarea:focus {
 
 @media all and (max-width: 500px) {
     #mainmenu ul li {
-        padding: 0 4px;
         font-size: 12px;
     }
 }
