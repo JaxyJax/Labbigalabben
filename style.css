@@ -43,6 +43,7 @@ h5 {
 }
 
 #logo img {
+    height: 50px;
     padding-top: 18px;
     padding: 13px 30px 0 30px;
 }
@@ -134,6 +135,17 @@ h5 {
     line-height: 40px;
 }
 
+#submenu p, #submenu a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+#submenu li a {
+    color: red;
+    display: block;
+}
+
 #submenu li:hover {
     color: #EC407A;
     background: white;
@@ -142,10 +154,11 @@ h5 {
     transition: all 0.3s;
 }
 
-#submenu p, a {
-    display: inline;
-    text-decoration: none;
-    color: black;
+#submenu li:hover p {
+    color: #EC407A;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 li#active {
@@ -397,6 +410,7 @@ input[type=submit]:hover {
 }
 
 .work-content img {
+    width: 150px;
     display: block;
     margin: 0 auto;
 }
@@ -504,11 +518,7 @@ textarea:focus {
     
 }
 
-@media all and (max-width: 700px) {
-    #header{
-        padding: 2px;
-    }    
-
+@media all and (max-width: 700px) {  
     #left {
         width: 100%;
     }
@@ -584,12 +594,12 @@ textarea:focus {
     .col2 {
         width: 100%;
     }
-
-    #mainmenu ul li {
-        padding: 0 4px;
+    
+    #sort table {
+        width: 100px;
     }
 
-    #sort {
-    padding: 10px;
+    #sort th {
+        display: none;
     }
 }
