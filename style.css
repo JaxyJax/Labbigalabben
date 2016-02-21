@@ -177,6 +177,11 @@ li#active {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content img {
+    width: 100%;
 }
 
 .content + .content {
@@ -191,6 +196,10 @@ li#active {
     background-color: #fff;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 10px;
+}
+
+.content-map img {
+    width: 100%;
 }
 
 #map-wrap {
@@ -558,7 +567,6 @@ textarea:focus {
     }
     
     #mainmenu ul li {
-        padding: 0 10px;
         line-height: 40px;
     }
     
@@ -582,6 +590,7 @@ textarea:focus {
 
 @media all and (max-width: 500px) {
     #mainmenu ul li {
+        padding: 0 4px;
         font-size: 12px;
     }
 }
