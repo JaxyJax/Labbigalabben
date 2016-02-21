@@ -168,9 +168,10 @@ li#active {
 
 /* --- LEFT --- */
 
-#left {
+.left {
     float: left;
     width: 66.66666667%;
+    overflow: auto;
 }
 
 .content {
@@ -288,12 +289,12 @@ li#active {
 
 /* --- RIGHT --- */
 
-#right {
+.right {
     float: right;
     width: 33.33333333%;
 }
 
-#right .content {
+.right .content {
     margin-left: 10px;
 }
 
@@ -557,16 +558,16 @@ textarea:focus {
 }
 
 @media all and (max-width: 700px) {  
-    #left {
+    .left {
         width: 100%;
     }
     
-    #right {
+    .right {
         float: left;
         width: 100%;
     }
     
-    #right .content {
+    .right .content {
         margin-left: 0px;
         margin-bottom: 10px;
     }
