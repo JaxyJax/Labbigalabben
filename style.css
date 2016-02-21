@@ -398,10 +398,9 @@ input[type=submit]:hover {
     background: #FCE4EC;
 }
 
+/* --- ABOUT --- */
 
-/* --- WORK --- */
-
-.work-content {
+.about-content {
     margin: 0 auto;
     max-width: 600px;
     padding: 30px;
@@ -409,16 +408,48 @@ input[type=submit]:hover {
     border-radius: 10px;
 }
 
-.work-content p {
+.about-content p {
     text-align: justify;
 }
+.about-content a {
+    text-decoration: none;
+    color: #EC407A;
+}
 
-.work-content h2 {
+.about-content h2 {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.work-content img {
+.about-content img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+
+
+/* --- CONTACT --- */
+
+.contact-content {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.contact-content p {
+    text-align: justify;
+}
+
+.contact-content h2 {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-content img {
     width: 150px;
     display: block;
     margin: 0 auto;
