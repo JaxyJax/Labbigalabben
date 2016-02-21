@@ -189,10 +189,19 @@ li#active {
     margin-top: 10px;
 }
 
+.content ul {
+    padding: 0 15px;
+}
+
 /* --- INFO --- */
 
 .content h2 {
     margin: 0;
+}
+
+.content.transparent {
+    padding: 0 30px;
+    background: none;
 }
 
 .text {
@@ -204,19 +213,39 @@ li#active {
     padding-right: 15px;
 }
 
-.info-wrap {
+.text a,
+.text a:visited {
+    text-decoration: none;
+    color: #EC407A;
+}
+
+.text a:hover {
+    color: #42A5F5;
+}
+
+.text h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+#pris {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.doginfo-wrap {
     float: right;
     width: 40%;
     
 }
 
-.info {
+.doginfo {
     padding: 15px;
     border: 1px solid #EEEEEE;
     border-radius: 10px;
 }
 
-.info ul {
+.doginfo ul {
     padding: 0 15px;
 }
 
@@ -227,6 +256,10 @@ li#active {
     background-color: #fff;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 10px;
+}
+
+.content-map.dog {
+    border-radius: 10px;
 }
 
 #map-wrap {
@@ -594,7 +627,7 @@ textarea:focus {
         width: 100%;
     }
 
-    .info-wrap {
+    .doginfo-wrap {
         width: 100%;
 
     }
