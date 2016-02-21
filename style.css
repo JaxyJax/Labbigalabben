@@ -178,12 +178,47 @@ li#active {
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content img {
+    width: 100%;
 }
 
 .content + .content {
     margin-top: 10px;
 }
 
+/* --- INFO --- */
+
+.content h2 {
+    margin: 0;
+}
+
+.text {
+    float: left;
+    width: 60%;
+}
+
+.text p {
+    padding-right: 15px;
+}
+
+.info-wrap {
+    float: right;
+    width: 40%;
+    
+}
+
+.info {
+    padding: 15px;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+.info ul {
+    padding: 0 15px;
+}
 
 /* --- GOOGLE MAP --- */
 
@@ -553,6 +588,19 @@ textarea:focus {
     }
     .age {
         width: 100%;
+    }
+    
+    .text {
+        width: 100%;
+    }
+
+    .info-wrap {
+        width: 100%;
+
+    }
+    
+    .text p {
+        padding-right: 0;
     }
     
 }
