@@ -370,6 +370,7 @@ li#active {
 /* --- SEARCH --- */
 
 #search {
+    position: relative;
 }
 
 #search h2 {
@@ -384,12 +385,28 @@ li#active {
     padding: 6px 12px;
     float: right;
     margin: 2px;
+
+}
+
+#infoshow{
+    position: absolute;
+    top: 25px;
+    visibility: hidden;
+    border: solid 5px #3498db;
+    background: white;
+    padding: 6px;
+    border-radius: 5px;
+
+}
+
+#info:hover + #infoshow{
+    visibility: visible;
 }
 
 #info:hover{
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    transition: all 0.7s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
     background:#FCE4EC;
     color:black;
 }
