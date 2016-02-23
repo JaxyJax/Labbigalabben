@@ -537,7 +537,7 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.brothers {
+img.brothers {
     width: 20%;
     border-radius: 30px;
 }
