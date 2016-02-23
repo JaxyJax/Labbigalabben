@@ -309,7 +309,7 @@ li#active {
 }
 
 #sort td {
-    background: url(images/arrowmicro.png) no-repeat right 0px center;
+    background: url(/images/arrowmicro.png) no-repeat right 0px center;
     width: 100%;
     padding-right: 20px;
     cursor: pointer;
@@ -451,7 +451,7 @@ input[type=checkbox] {
 }
 
 select {
-    background: url(images/arrowmicro.png) no-repeat right 10px center;
+    background: url(/images/arrowmicro.png) no-repeat right 10px center;
     border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
