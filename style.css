@@ -29,7 +29,12 @@ a:hover {
     color: #42A5F5;
 }
 
-::selection, ::-moz-selection {
+::selection {
+    background-color: #EC407A;
+    color: #fff;
+}
+
+::-moz-selection {
     background-color: #EC407A;
     color: #fff;
 }
@@ -570,6 +575,7 @@ input[type=submit]:hover {
 }
 
 .feedback-input {
+    font-family: Helvetica, Arial, sans-serif;
     color: #3c3c3c;
     font-size: 18px;
     border-radius: 0;
