@@ -29,16 +29,6 @@ a:hover {
     color: #42A5F5;
 }
 
-::selection {
-    background-color: #EC407A;
-    color: #fff;
-}
-
-::-moz-selection {
-    background-color: #EC407A;
-    color: #fff;
-}
-
 #wrapper {
     max-width: 1000px;
     margin: 0 auto;
