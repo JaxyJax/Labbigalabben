@@ -309,7 +309,7 @@ li#active {
 }
 
 #sort td {
-    background: url(images/arrowmicro.png) no-repeat right 0px center;
+    background: url(../images/arrowmicro.png) no-repeat right 0px center;
     width: 100%;
     padding-right: 20px;
     cursor: pointer;
@@ -451,7 +451,7 @@ input[type=checkbox] {
 }
 
 select {
-    background: url(images/arrowmicro.png) no-repeat right 10px center;
+    background: url(../images/arrowmicro.png) no-repeat right 10px center;
     border-radius: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -593,21 +593,21 @@ img.brothers {
 /* --- Icons --- */
 
 #name {
-    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-image: url(../images/name.png);    /* Källa: http://rexkirby.com/kirbyandson/images/name.svg */
     background-size: 20px 20px;
     background-position: 10px 10px;
     background-repeat: no-repeat;
 }
 
 #email {
-    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-image: url(../images/email.png);    /* Källa: http://rexkirby.com/kirbyandson/images/email.svg */
     background-size: 20px 20px;
     background-position: 10px 10px;
     background-repeat: no-repeat;
 }
 
 #comment {
-    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-image: url(../images/comment.png);    /* Källa: http://rexkirby.com/kirbyandson/images/comment.svg */
     background-size: 20px 20px;
     background-position: 10px 10px;
     background-repeat: no-repeat;
