@@ -384,13 +384,12 @@ li#active {
     border-radius: 50%;
     background: #3498db;
     color: white;
-    padding: 6px 12px;
+    padding: 6px 11px;
     float: right;
     margin: 2px;
-
 }
 
-#infoshow{
+#infoshow {
     position: absolute;
     top: 25px;
     visibility: hidden;
@@ -405,12 +404,13 @@ li#active {
     visibility: visible;
 }
 
-#info:hover{
+#info:hover {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
     background:#FCE4EC;
     color:black;
+    cursor: pointer;
 }
 
 .searchinput {
