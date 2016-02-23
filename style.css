@@ -193,6 +193,9 @@ li#active {
     padding: 0 15px;
 }
 
+#smulancontact {
+    color: #EC407A;
+}
 /* --- INFO --- */
 
 .content h2 {
@@ -278,7 +281,6 @@ li#active {
     left: 0;
     width: 100% !important;
     height: 100% !important;
-    pointer-events: none;
     border: none;
 }
 
