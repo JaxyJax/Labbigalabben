@@ -44,15 +44,15 @@
                     <div id="form-div">
                         <form class="form">
                             <p class="name">
-                                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Namn" id="name" />
+                                <input name="name" type="text" class="feedback-input" placeholder="Namn" id="name" required/>
                             </p>
 
                             <p class="email">
-                                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                                <input name="email" type="email" class="feedback-input" id="email" placeholder="Email" required/>
                             </p>
 
                             <p class="text">
-                                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Skriv ditt meddelande här..."></textarea>
+                                <textarea name="text" class="feedback-input" id="comment" placeholder="Skriv ditt meddelande här..." required></textarea>
                             </p>
 
                             <div class="submit">
