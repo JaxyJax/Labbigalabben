@@ -6,6 +6,7 @@ html {
     width: 100%;
     background-color: #E3F2FD;
     background: url('images/dogtile4.png');
+    background-position: center;
     background-attachment: fixed;
 }
 
@@ -16,6 +17,21 @@ h4,
 h5 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+}
+
+a,
+a:visited {
+    color: #EC407A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #42A5F5;
+}
+
+::selection {
+    background-color: #EC407A;
+    color: #fff;
 }
 
 #wrapper {
@@ -29,7 +45,6 @@ h5 {
 
 #header {
     background-color: #fff;
-    color: #333;
     padding: 10px;
     min-height: 80px;
     margin: 0 auto;
@@ -135,7 +150,8 @@ h5 {
     line-height: 40px;
 }
 
-#submenu p, #submenu a {
+#submenu p,
+#submenu a {
     display: inline;
     text-decoration: none;
     color: black;
@@ -196,6 +212,8 @@ li#active {
 #smulancontact {
     color: #EC407A;
 }
+
+
 /* --- INFO --- */
 
 .content h2 {
@@ -208,22 +226,16 @@ li#active {
 }
 
 .text {
+    width: 100%;
     float: left;
+}
+
+.text.dog {
     width: 60%;
 }
 
 .text p {
     padding-right: 15px;
-}
-
-.text a,
-.text a:visited {
-    text-decoration: none;
-    color: #EC407A;
-}
-
-.text a:hover {
-    color: #42A5F5;
 }
 
 .text h3 {
@@ -239,7 +251,6 @@ li#active {
 .doginfo-wrap {
     float: right;
     width: 40%;
-    
 }
 
 .doginfo {
@@ -251,6 +262,7 @@ li#active {
 .doginfo ul {
     padding: 0 15px;
 }
+
 
 /* --- GOOGLE MAP --- */
 
@@ -312,10 +324,11 @@ li#active {
     padding-left: 10px;
 }
 
-#sort a{
+#sort a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
+
 
 /* --- RESULTS --- */
 
@@ -348,7 +361,6 @@ li#active {
 }
 
 .post a {
-    text-decoration: none;
     color: #000;
 }
 
@@ -397,10 +409,9 @@ li#active {
     background: white;
     padding: 6px;
     border-radius: 5px;
-
 }
 
-#info:hover + #infoshow{
+#info:hover + #infoshow {
     visibility: visible;
 }
 
@@ -408,8 +419,8 @@ li#active {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    background:#FCE4EC;
-    color:black;
+    background: #FCE4EC;
+    color: black;
     cursor: pointer;
 }
 
@@ -475,11 +486,9 @@ select:focus {
 
 input[type=submit] {
     width: 100%;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    width: 100%;
     border: none;
     cursor: pointer;
-    background-color: #3498db;
+    background-color: #42A5F5;
     color: white;
     font-size: 24px;
     padding: 10px 0;
@@ -494,65 +503,58 @@ input[type=submit]:hover {
     background: #FCE4EC;
 }
 
+
 /* --- ABOUT --- */
 
-.about-content {
+.content.about {
     margin: 0 auto;
     max-width: 600px;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 10px;
     text-align: center;
 }
 
-.about-content p {
+.content.about p {
     text-align: justify;
 }
 
-.about-content a {
+.content.about a {
     text-decoration: none;
     color: #EC407A;
 }
 
-.about-content h2 {
+.content.about h2 {
+    margin-bottom: 15px;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 #max {
     width: 80%;
     border-radius: 10px;
+    text-align: center;
 }
 
-.brothers{
-    width:20%;
+.brothers {
+    width: 20%;
     border-radius: 30px;
-
-
 }
-
 
 
 /* --- CONTACT --- */
 
-.contact-content {
+.content.contact {
     margin: 0 auto;
     max-width: 600px;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 10px;
 }
 
-.contact-content p {
+.content.contact p {
     text-align: justify;
 }
 
-.contact-content h2 {
+.content.contact h2 {
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 15px;
 }
 
-.contact-content img {
+.content.contact img {
     width: 150px;
     display: block;
     margin: 0 auto;
@@ -569,7 +571,6 @@ input[type=submit]:hover {
 
 .feedback-input {
     color: #3c3c3c;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 18px;
     border-radius: 0;
     line-height: 22px;
@@ -636,6 +637,7 @@ textarea:focus {
     clear: both;
     text-align: center;
     padding-top: 10px;
+    color: #EC407A;
 }
 
 #footer .content {
@@ -651,60 +653,49 @@ textarea:focus {
     }
     .col2 {
         width: 100%;
-    } 
+    }
     .color {
         width: 100%;
     }
     .age {
         width: 100%;
     }
-    
     .text {
         width: 100%;
     }
-
     .doginfo-wrap {
         width: 100%;
-
     }
-    
     .text p {
         padding-right: 0;
     }
-    
 }
 
-@media all and (max-width: 700px) {  
+@media all and (max-width: 700px) {
     .left {
         width: 100%;
     }
-    
     .right {
         float: left;
         width: 100%;
     }
-    
     .right .content {
         margin-left: 0px;
         margin-bottom: 10px;
     }
-
     .col1 {
         width: 50%;
     }
     .col2 {
         width: 50%;
     }
-    
     #logo-wrap {
         width: 290px;
         margin: 0 auto;
     }
-    
     .logo-text {
         float: none;
     }
-    
     #mainmenu {
         padding: 5px 0 0 0;
         margin: 0 10px 0 10px;
@@ -712,25 +703,20 @@ textarea:focus {
         text-align: center;
         border-top: 1px solid #EEEEEE;
     }
-    
     #mainmenu ul li {
         padding: 0 10px;
         line-height: 40px;
     }
-    
     #mainmenu li a:hover {
         border-bottom: none;
-        padding:0;
+        padding: 0;
     }
-    
     #mainmenu li:nth-child(2) a:hover {
         border-bottom: none;
     }
-
     #mainmenu li:nth-child(3) a:hover {
         border-bottom: none;
     }
-    
     #submenu {
         width: 100%;
     }
@@ -746,15 +732,12 @@ textarea:focus {
     .col1 {
         width: 100%;
     }
-
     .col2 {
         width: 100%;
     }
-    
     #sort table {
         width: 100px;
     }
-
     #sort th {
         display: none;
     }
