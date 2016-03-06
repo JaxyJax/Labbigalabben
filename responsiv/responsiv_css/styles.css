@@ -1,0 +1,95 @@
+body {
+	background: teal;
+	margin: 0 5%;
+	padding: 0;
+}
+
+
+
+#header,
+#footer {
+	color: blue;
+	text-align: center;
+	padding: 10px 0;
+	clear:both;
+}
+#follow {
+
+	background:red;
+	padding: 5px;
+
+}
+
+#follow li {
+	display: inline;
+}
+
+#follow li a {
+	text-decoration: none;
+	
+	color: white;
+}
+
+#bilder p{
+	margin: 0;
+	padding: 10px 0;
+}
+
+#bilder img {
+	width:100%;
+}
+
+#topmat img {
+width: 100%;
+
+}
+
+aside {
+	background: purple;
+	width:50%;
+	float: left;
+
+}
+
+#botmat {
+	background: blue;
+	width:50%;
+	float: left;
+
+}
+
+
+
+
+@media (max-width: 800px) {
+	body{
+		margin: 0;
+		background: pink;
+	}
+	aside {
+	background: purple;
+	width:100%;
+	float: none;
+	}
+
+	#botmat {
+	background: blue;
+	width:100%;
+	float: none;
+
+	}
+}
+
+@media (max-width: 400px) {
+	body{
+		background: yellow;
+	}
+
+	aside {
+		display: none;
+	}
+
+	#follow li {
+	display: block;
+}
+}
