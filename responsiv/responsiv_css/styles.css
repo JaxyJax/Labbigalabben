@@ -137,6 +137,9 @@ img {
         margin: 0;
         background: #FCE4EC;
     }
+    #wrapper {
+        margin: 0 10px;
+    }
     #header {
         background-color: #E91E63;
         text-transform: uppercase;
@@ -148,9 +151,6 @@ img {
     #meny-wrap {
         width: 100%;
         margin-bottom: 10px;
-    }
-    #meny {
-        margin-right: 0;
     }
     #content {
         width: 100%;
