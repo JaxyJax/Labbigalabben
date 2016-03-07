@@ -152,6 +152,9 @@ img {
         width: 100%;
         margin-bottom: 10px;
     }
+    #meny {
+        margin-right: 0;
+    }
     #content {
         width: 100%;
         float: none;
