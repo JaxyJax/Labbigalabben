@@ -7,14 +7,14 @@ window.addEventListener("load", prepareGUI, false);
 function prepareGUI() {
 			var pName = document.getElementsByClassName("pExpandedImage");
 			var cName = document.getElementsByClassName("cExpanded");
-			var i=pName.length;
+			var i = pName.length;
 			var r = document.querySelector("#contentsection");
 			r.addEventListener("click", expandCollapse, false);
 			
 			while(i--)
 				pName[i].setAttribute("class", "pCollapsedImage");
 
-			i=cName.length;
+			i = cName.length;
 			while(i--)
 				cName[i].setAttribute("class", "cCollapsed");
 
@@ -35,7 +35,7 @@ function expandCollapse(klick) {
 			var clickRef = klick.target;   // den jag klickar på
 			var x = klick.target;
 			
-			for( i=0; i<=t.length; i++){
+			for( i = 0; i <= t.length; i++){
 
 				if(clickRef === t[i-1]){
 

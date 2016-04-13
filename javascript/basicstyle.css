@@ -1,25 +1,46 @@
 /* basicstyle.css */
 
 /* befintliga element */
-body {
-	font-family: Garamond;
-    background-color: white;
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 200;
 }
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #7e94d8;
+    padding: 0;
+    margin: 0;
+}
+
+#contentsection ul {
+    padding-right: 10px;
+}
+
+#contentsection ul li ul {
+    padding-left: 20px;
+}
+
 #contentsection ul li {
-	font-size: 25px;
+	font-size: 20px;
+    line-height: 20px;
 }
 
 /* class för laboration 3 i JavaScript för webbutveckling*/
 #contentsection .pExpandedImage {
-	list-style-image: url(minusimage.png);
+	list-style-image: url(arrowdown.png);
 	width: 0;
 }
 
 #contentsection .pCollapsedImage {
-	list-style-image: url(plusimage.png);
+	list-style-image: url(arrowright.png);
 	width: 0;
 }
-
 
 #contentsection .cExpanded {
 	list-style-image: none;
@@ -32,48 +53,48 @@ body {
 }
 
 /* id */
-#pstyle {
-	font-size: 25px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: blue;
-	margin-left: 10px;
-	margin-right: 10px;
-	text-align: center;
-}
 
 #sitewrapper {
     margin: 25px;
-	width: 50%;
-	background-color: white;
-	color: white;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#contentwrapper {
-	width: 100%;
-	background-color: lightgreen;
-	min-height: 500px;
-    position: relative;
+    width: 50%;
+    min-width: 400px;
+    background-image: linear-gradient(159deg, #47455d 0%, #323045 97%);
+    box-shadow: 0px 31px 35px 0px rgba(0, 0, 0, 0.38);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #contentnav {
-	width: 20%;
-	float: left;
-	min-height: 400px;
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
 }
 
-#contentsection{
-	width: 75%;
-	float: right;
-	min-height: 400px;
-	padding-top: 20px;
-    position: relative;
+#contentnav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contentnav ul li a {
+    border: 1px solid #C5CAE9;
+    border-radius: 20px;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #C5CAE9;
+}
+
+#contentnav ul li a:hover {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#contentsection {
+    float: left;
+    width: 100%;
+    min-height: 300px;
+    padding: 20px;
 }
 
 #buttonlink {
@@ -86,43 +107,20 @@ body {
     top: 50px;
 }
 
-#siteheader, #sitefooter {
-	height: 40px;
-	background-color: green;
-	color: white;
+#siteheader,
+#sitefooter {
+    margin: 0px 30px;
+    min-height: 40px;
+    color: white;
 }
 
 #siteheader {
-	font-size: 30px;
-	padding-left: 10px;
-	padding-top: 10px;
+    font-size: 30px;
+    padding-top: 15px;
 }
 
 #sitefooter {
-	font-size: 15px;
-	text-align: center;
-	padding-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
 }
-#contentnav ul {
-	list-style-type: none;
-	padding-top: 5px;
-	margin-left: 0px;
-}
-
-#contentnav ul li {
-	margin-bottom: 5px;
-	padding: 3px;
-	border-style: solid;
-	border-color: white;
-	border-width: 1px;
-	background-color: green;
-	color: white;
-}
-
-#contentnav ul li a {
-	text-decoration: none;
-	color: white;
-}
-
-
-
