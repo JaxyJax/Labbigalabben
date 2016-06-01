@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Våra valpar</title>
+    </head>
+<body>
+	<canvas id="field" width="600" height="600" style="border: 5px solid black;">
+		Your browser does not support the canvas element.
+	</canvas>
+	<script>
+		window.addEventListener("load", setUp);
+		
+		function setUp(){
+			var canvas = document.getElementById("field"),
+				xPos = 0,
+				puppy = new Image(),
+				ctx = null,
+				speed = 10;
+
+			ctx = canvas.getContext("2d");
+			document.addEventListener("keydown", moveIt);
+			puppy.addEventListener("load", drawScreen);
+			puppy.src="puppyslide.jpg";
+
+			function drawScreen(){
+				//Förflyttar bilden vid varje vänster/höger piltryck tack vare variabeln xPos.
+				ctx.drawImage(puppy, xPos, 0, puppy.width, puppy.height, 0, 0, puppy.width, 600);
+			}
+
+			function moveIt(e){
+
+				// Kollar vilket håll den ska åka mot (bilden åker åt det håll tangenten "visar"), 
+				// utför positionsjustering och anropar drawscreen.
+		        switch (e.keyCode){
+		        case 37:
+		            // Pil vänster
+		            xPos += speed;
+		            if (xPos > puppy.width - 600) {
+		            	// Sömlös förflyttning
+		                xPos = 0;
+		            } 
+		            drawScreen();
+		            break;
+		        case 39:
+		            // Pil höger
+		            xPos -= speed;
+		            if (xPos < 0) {
+		            	// Sömlös förflyttning
+		                xPos = puppy.width - 600;
+		            } 
+		            drawScreen();
+		            break;
+		        }
+			}
+
+		}
+
+	</script>
+</body>
+</html>
