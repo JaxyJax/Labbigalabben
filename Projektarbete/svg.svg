@@ -36,7 +36,7 @@
                  from="1"
                  to="0"
                  dur="0.2s"
-                 begin="a1.end" />
+                 begin="0; a1.end" />
         .
     </text>
     <text x="85" y="140px" fill="white" font-family="Arial">
