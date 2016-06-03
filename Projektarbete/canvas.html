@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PuppyLove | Canvas</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <h1>PuppyLove</h1>
+
+        <div><img id="logo" src="images/PuppyLovesmall.svg" width="50px" height="50px" /></div>
+
+    </header>
+
+    <nav>
+
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="audio.html">audio, video &amp; css animation</a></li>
+            <li><a href="canvas.html" class="active">canvas</a></li>
+            <li><a href="svg.html">svg &amp; js</a></li>
+            <li><a href="smil.html">svg &amp; smil</a></li>
+        </ul>
+
+    </nav>
+
+    <div id="wrapper">
+        
+        <h2>Canvas</h2>
+        
+        <h3>Tryck på vänster/höger-pilarna!</h3>
+
+        <canvas id="field" width="600" height="600" style="border: 5px solid black;">
+            Your browser does not support the canvas element.
+        </canvas>
+        <script>
+            window.addEventListener("load", setUp);
+
+            function setUp() {
+                var canvas = document.getElementById("field"),
+                    xPos = 0,
+                    puppy = new Image(),
+                    ctx = null,
+                    speed = 10;
+
+                ctx = canvas.getContext("2d");
+                document.addEventListener("keydown", moveIt);
+                puppy.addEventListener("load", drawScreen);
+                puppy.src = "images/puppyslide.jpg";
+
+                function drawScreen() {
+                    //Förflyttar bilden vid varje vänster/höger piltryck tack vare variabeln xPos.
+                    ctx.drawImage(puppy, xPos, 0, puppy.width, puppy.height, 0, 0, puppy.width, 600);
+                }
+
+                function moveIt(e) {
+
+                    // Kollar vilket håll den ska åka mot (bilden åker åt det håll tangenten "visar"), 
+                    // utför positionsjustering och anropar drawscreen.
+                    switch (e.keyCode) {
+                    case 37:
+                        // Pil vänster
+                        xPos += speed;
+                        if (xPos > puppy.width - 600) {
+                            // Sömlös förflyttning
+                            xPos = 0;
+                        }
+                        drawScreen();
+                        break;
+                    case 39:
+                        // Pil höger
+                        xPos -= speed;
+                        if (xPos < 0) {
+                            // Sömlös förflyttning
+                            xPos = puppy.width - 600;
+                        }
+                        drawScreen();
+                        break;
+                    }
+                }
+
+            }
+        </script>
+
+    </div>
+
+    <footer>
+
+
+
+    </footer>
+
+</body>
+
+</html>

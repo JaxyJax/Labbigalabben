@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PuppyLove | Home</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+
+        <h1>PuppyLove</h1>
+        
+        <!-- SVG skapad i Adobe Illustrator och sedan animerad med SMIL -->
+        <div><img id="logo" src="images/PuppyLovesmall.svg" width="50px" height="50px" /></div>
+
+    </header>
+
+    <nav>
+
+        <ul>
+            <li><a href="index.html" class="active">home</a></li>
+            <li><a href="audio.html">audio, video &amp; css animation</a></li>
+            <li><a href="canvas.html">canvas</a></li>
+            <li><a href="svg.html">svg &amp; js</a></li>
+            <li><a href="smil.html">svg &amp; smil</a></li>
+        </ul>
+
+    </nav>
+
+    <div id="wrapper">
+        
+        <svg id="svg-text" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="580px" height="50px">
+            
+            <path id="path">
+                
+                <animate attributeName="d"
+                    from="m0, 30 h0"
+                    to="m0, 30 h1100"
+                    dur="5s"
+                    begin="0s"
+                    repeatCount="indefinite" />
+                
+            </path>
+            
+            <text font-size="30"
+                font-family="Arial"
+                fill="#E8F01B">
+                <textPath xlink:href="#path">
+                    
+                    Hej och välkommen till oss på PuppyLove!
+               
+                </textPath>
+            </text>
+            
+        </svg>
+        
+        <p>På den här hundälskarsidan kan du:</p>
+            <ul>
+                <li>Se en film på en söt hund!</li>
+                <li>Titta på några söta hundar i en slideshow!</li>
+                <li>Spela ett roligt spel!</li>
+                <li>Se en rolig laddningsikon!</li>
+            </ul>
+       
+        <audio autoplay>
+            <source src="cutemusic.mp3">
+            Din webbläsare stödjer inte HTML5 Audio.
+        </audio>
+
+    </div>
+
+    <footer>
+
+
+
+    </footer>
+
+</body>
+
+</html>
